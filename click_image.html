@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>image-back</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html{
+				width: 100vw;
+				height: 100vh;
+				scrollbar-width: none;
+				overflow-y: hidden;
+				overflow-x: hidden;
+			}
+			body{
+				position: relative;
+				z-index: -1;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: linear-gradient(135deg,#ff2c76,#6d45ff);;
+			}
+			::-webkit-scrollbar{
+				width: 0;
+				height: 0;
+			}
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				max-width: 100%;
+				height: auto;
+				transition: opacity 1s;
+				-webkit-transition: opacity  1s; /* Safari */
+				-moz-transition: opacity  1s; /*firfox*/
+			}
+			div{
+				width: 100%;
+				position: absolute;
+				z-index: 10000;
+				left: 0;
+				top: 94vh;
+				font: 400 20px "思源雅黑" ;
+				color: #3d3d3d;
+				text-align: center;
+				line-height: 40px;
+			}
+			#img1{
+				opacity: 1;
+			}
+			#img2{
+				opacity: 1;
+			}
+			section{
+				width: 100%;
+				height: 94vh;
+				position: absolute;
+				z-index: 10000;
+				left: 0;
+				top: 0;
+				display: flex;
+				flex-direction: column;
+			}
+			#times{
+				padding-top: 300px;
+				width: 100%;
+				font: 700 84px "思源雅黑";
+				color: #fff;
+				opacity: 0.6;
+				letter-spacing: 5px;
+				text-align: center;
+				text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+			}
+			#hello{
+				width: 100%;
+				font: 700 42px "思源雅黑";
+				color: #ffffff;
+				opacity: 0.6;
+				letter-spacing: 10px;
+				text-align: center;
+				text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+			}
+			article{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			#container1{
+				z-index: 100;
+				opacity: 1;
+			}
+			#container2{
+				z-index: 10;
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<article id="container1">
+			<img name="m1" id="img1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cef793db6.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf0f95a8b.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf1e2cff0.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf1f75d37.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd620668b3.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf3ca0288.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/22-637c3fb5a99f1.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf4170e57.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd62096522.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf44213e1.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf443cb66.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd6208d41e.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf50d9c81.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf595c41b.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/22-637c3f94d87e9.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd62108959.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf5a6d6d2.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf7583b5f.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf7aa5b35.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf7b25dd8.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf8aed13a.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd6209860e.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd6251b76c.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf8f8961e.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf9bbff03.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd6251bbbe.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cf9f7362e.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/20-6379cfa0880c9.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd62546f97.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/21-637aee49defd2.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/21-637aee4ac9e2a.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/21-637aee4b17fe6.jpg" alt="#">
+			
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd625aa6f8.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/21-637aee4b6f4f1.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/23-637dd6257c7e3.jpg" alt="#">
+			<img name="m1" src="https://s2.232232.xyz/static/227/2022/11/21-637aee4b402fa.jpg" alt="#">
+		</article>
+		
+		<article id="container2">
+			<img name="m2" id="img2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3f7cbcdf6.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3f8781115.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73d1b95c.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3f9870fd6.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73810371.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73a2c366.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73bd121a.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73c3d6fa.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73d2f903.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/23-637dd73da8dee.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3fbca7dbf.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3fe2d1f6a.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3fe52e0da.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3fe566819.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3fee5cb7c.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c3ff02fbdb.jpg" alt="#">
+			<img name="m2" src="https://s2.232232.xyz/static/227/2022/11/22-637c40049bfc4.jpg" alt="#">
+		</article>
+		<section>
+			<p id="times"></p>
+			<p id="hello"></p>
+		</section>
+		<div onclick="clicked()">&copy;Jianghu</div>
+		
+		
+		<script type="text/javascript">
+			//初始化style.属性的值，未赋值之前属性值为空，这里的赋值并不是单纯的赋值，因为在CSS样式表中已经有属性值了，这里赋值只是一个类似同步
+			document.getElementById('container1').style.zIndex='100';
+			document.getElementById('container2').style.zIndex='10';
+			var i=0;
+			var strname=document.getElementsByName('m1');
+			//背景切换函数，
+			function clicked(){
+				i++;
+				if(i>strname.length-1){
+					strname[i-1].style.opacity='0';
+					i=0;
+					strname[i].style.opacity='1';
+				}
+				else{
+					strname[i-1].style.opacity='0';
+					strname[i].style.opacity='1';
+				}
+			}
+			//时间函数，获取本地时间，配合计时事件，间隔时间长度为1000毫秒
+			function timing(){
+				var dat=new Date();
+				var t=dat.toLocaleTimeString();
+				document.getElementById('times').innerHTML=t;
+			}
+			//获取小时时间，判断时间段
+			function days(){
+				var day=new Date();
+				var ti=day.getHours();
+				// console.log(ti,typeof(ti));
+				if(5<=ti && ti<9){
+					document.getElementById('hello').innerHTML="早上好，江湖";
+				}
+				else if(9<=ti && ti<12){
+					document.getElementById('hello').innerHTML='上午好，江湖';
+				}
+				else if(12<=ti && ti<14){
+					document.getElementById('hello').innerHTML='中午好，江湖';
+				}
+				else if(14<=ti && ti<18){
+					document.getElementById('hello').innerHTML='下午好，江湖';
+				}
+				else if(ti>=18){
+					document.getElementById('hello').innerHTML='晚上好，江湖';
+				}
+				else{
+					document.getElementById('hello').innerHTML='早点休息，江湖';
+				}
+			}
+			//图片模块选择函数
+			function imageMode(){
+				var mode1=document.getElementById('container1');
+				var mode2=document.getElementById('container2');
+				if(mode1.style.zIndex=='100'){
+					mode1.style.zIndex='1';//两个图像容器的位置
+					mode1.style.opacity='0';
+					mode2.style.opacity='1';
+					strname[i].style.opacity='0';//strname的赋值表达式必须在获取name名的上下位置，第一个位置是释放上一个图片模式的最后一个图片的显示
+					strname=document.getElementsByName('m2');
+					strname[0].style.opacity='1';//这个strname赋值表达式是新的图片模式，为第一个图片设置显示
+					i=0;
+				}
+				else{
+					mode1.style.zIndex='100';
+					mode1.style.opacity='1';
+					mode2.style.opacity='0';
+					strname[i].style.opacity='0';
+					strname=document.getElementsByName('m1');
+					strname[0].style.opacity='1';
+					i=0;//切换图片模式后，初始i的值，这是为了从头开始
+				}
+				// console.log(i);
+			}
+			//
+			document.addEventListener('keyup',(e)=>{
+				if(e.keyCode==39){
+					clicked();
+				}
+			});
+			document.addEventListener('keyup',(e)=>{
+				if(e.keyCode==40){
+					imageMode();
+				}
+			});
+			//函数调用
+			days();
+			var setime=setInterval(function(){timing()},1000);
+			var setimage=setInterval(function(){clicked()},600000);
+		</script>
+	</body>
+</html>
